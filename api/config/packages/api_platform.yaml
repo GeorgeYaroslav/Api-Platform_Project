@@ -1,0 +1,15 @@
+# En la clave paths le decimos en donde se encuentran los recursos de api platform
+api_platform:
+    mapping:
+        paths:
+            - '%kernel.project_dir%/config/api_platform/resources'
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
+    title: Symfony API Platform
+    show_webby: false
