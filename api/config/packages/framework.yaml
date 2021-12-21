@@ -16,7 +16,7 @@ framework:
         log: true
 
 # Aqui le estamos indicando que los grupos de serializacion estan en esta carpeta
-    serialization:
+    serializer:
         mapping:
             path:
                 - '%kernel.project_dir%/config/api_platform/serialization'
